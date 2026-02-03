@@ -11,6 +11,14 @@ import MapDemo7 from "./components/MapDemo7.jsx"
 import MapDemo8 from "./components/MapDemo8.jsx"
 import MapDemo9 from "./components/MapDemo9.jsx"
 import MapDemo10 from "./components/MapDemo10.jsx"
+import Navbar from "./components/Navbar.jsx"
+import { Route, Routes } from "react-router-dom"
+import NetflixHome from "./components/NetflixHome.jsx"
+import NetflixShows from "./components/NetflixShows.jsx"
+import NetflixMovies from "./components/NetflixMovies.jsx"
+import NetflixContact from "./components/NetflixContact.jsx"
+import NetflixAbout from "./components/NetflixAbout.jsx"
+import NetflixSeries from "./components/NetflixSeries.jsx"
 
 function App() {
 
@@ -19,7 +27,7 @@ function App() {
       {/* <HeaderComponent />
       <ContentComponent />
       <FooterComponent /> */}
-      <MapDemo1 />
+      {/* <MapDemo1 />
       <MapDemo2 />
       <MapDemo3 />
       <MapDemo4 />
@@ -28,7 +36,16 @@ function App() {
       <MapDemo7 />
       <MapDemo8 />
       <MapDemo9 />
-      <MapDemo10 />
+      <MapDemo10 /> */}
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<NetflixHome />} />
+        <Route path="/netflixShows"element={<NetflixShows />}  />
+        <Route path="/netflixMovies"element={<NetflixMovies />}  />
+        <Route path="/netflixSeries"element={<NetflixSeries />}  />
+        <Route path="/netflixContact"element={<NetflixContact />}  />
+        <Route path="/netflixAbout"element={<NetflixAbout />}  />
+      </Routes>
     </div>
   );
 }
