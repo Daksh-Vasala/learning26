@@ -19,6 +19,11 @@ import NetflixMovies from "./components/NetflixMovies.jsx"
 import NetflixContact from "./components/NetflixContact.jsx"
 import NetflixAbout from "./components/NetflixAbout.jsx"
 import NetflixSeries from "./components/NetflixSeries.jsx"
+import NotFound from "./components/NotFound.jsx"
+import Watch from "./components/Watch.jsx"
+import TeamDetails from "./components/TeamDetails.jsx"
+import Team from "./components/Team.jsx"
+
 
 function App() {
 
@@ -40,11 +45,15 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<NetflixHome />} />
+        <Route path="/*"element={<NotFound />}  />
         <Route path="/netflixShows"element={<NetflixShows />}  />
         <Route path="/netflixMovies"element={<NetflixMovies />}  />
         <Route path="/netflixSeries"element={<NetflixSeries />}  />
         <Route path="/netflixContact"element={<NetflixContact />}  />
         <Route path="/netflixAbout"element={<NetflixAbout />}  />
+        <Route path="/watch/:name"element={<Watch />}  />
+        <Route path="/team"element={<Team />}  />
+        <Route path="/teamdetail/:name"element={<TeamDetails />}  />
       </Routes>
     </div>
   );
