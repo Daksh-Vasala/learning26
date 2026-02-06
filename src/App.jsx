@@ -23,6 +23,10 @@ import NotFound from "./components/NotFound.jsx"
 import Watch from "./components/Watch.jsx"
 import TeamDetails from "./components/TeamDetails.jsx"
 import Team from "./components/Team.jsx"
+import FunctionDemo1 from "./components/FunctionDemo1.jsx"
+import UseStateDemo1 from "./components/UseStateDemo1.jsx"
+import UseStateDemo2 from "./components/UseStateDemo2.jsx"
+import UseStateDemo3 from "./components/UseStateDemo3.jsx"
 
 
 function App() {
@@ -54,6 +58,10 @@ function App() {
         <Route path="/watch/:name"element={<Watch />}  />
         <Route path="/team"element={<Team />}  />
         <Route path="/teamdetail/:name"element={<TeamDetails />}  />
+        <Route path="/funcd1"element={<FunctionDemo1 />}  />
+        <Route path="/used1"element={<UseStateDemo1 />}  />
+        <Route path="/used2"element={<UseStateDemo2 />}  />
+        <Route path="/used3"element={<UseStateDemo3 />}  />
       </Routes>
     </div>
   );
