@@ -1,4 +1,4 @@
-function FooterComponent() {
+function FooterComponent(props) {
   return (
     <div
       style={{
@@ -7,10 +7,14 @@ function FooterComponent() {
         padding: "8px",
         textAlign: "center",
         marginTop: "auto",
-        fontSize: "50px"
+        fontSize: "50px",
+        position: "absolute",
+        bottom: "0",
+        right: "0",
+        left: "0",
       }}
     >
-      FC BARCELONA
+      {props.footer || "Footer"}
     </div>
   );
 }

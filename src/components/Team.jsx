@@ -18,7 +18,7 @@ function Team() {
     <div style={{textAlign: "center"}}>
       {teams.map((team) => {
         return (
-          <li key={teams.id}>
+          <li key={team.id}>
             <Link to={`/teamdetail/${team.name}`} >{team.name}</Link>
           </li>
         )
