@@ -12,7 +12,7 @@ import MapDemo8 from "./components/MapDemo8.jsx"
 import MapDemo9 from "./components/MapDemo9.jsx"
 import MapDemo10 from "./components/MapDemo10.jsx"
 import Navbar from "./components/Navbar.jsx"
-import { Form, Route, Routes } from "react-router-dom"
+import { Route, Routes } from "react-router-dom"
 import NetflixHome from "./components/NetflixHome.jsx"
 import NetflixShows from "./components/NetflixShows.jsx"
 import NetflixMovies from "./components/NetflixMovies.jsx"
@@ -28,7 +28,7 @@ import UseStateDemo1 from "./components/UseStateDemo1.jsx"
 import UseStateDemo2 from "./components/UseStateDemo2.jsx"
 import UseStateDemo3 from "./components/UseStateDemo3.jsx"
 import Tables from "./components/Tables.jsx";
-import FormInput from "./components/FormInput.jsx";
+import Input from "./components/input/Input.jsx";
 
 
 function App() {
@@ -45,6 +45,7 @@ function App() {
     {name: "Usestate demo 2", link: "/used2"},
     {name: "Usestate demo 3", link: "/used3"},
     {name: "Tables", link: "/tables"},
+    {name: "Input", link: "/input"},
   ]
 
   return (
@@ -78,7 +79,7 @@ function App() {
         <Route path="/used2"element={<UseStateDemo2 />}  />
         <Route path="/used3"element={<UseStateDemo3 />}  />
         <Route path="/tables"element={<Tables />}  />
-        <Route path="/form"element={<FormInput />}  />
+        <Route path="/input"element={<Input />}  />
       </Routes>
       <FooterComponent footer="2026" /> 
     </div>
