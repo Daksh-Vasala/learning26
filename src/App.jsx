@@ -29,23 +29,33 @@ import UseStateDemo2 from "./components/UseStateDemo2.jsx"
 import UseStateDemo3 from "./components/UseStateDemo3.jsx"
 import Tables from "./components/Tables.jsx";
 import Input from "./components/input/Input.jsx";
+import FormDemo1 from "./components/forms/FormDemo1.jsx";
+import FormDemo2 from "./components/forms/FormDemo2.jsx";
+import FormDemo3 from "./components/forms/FormDemo3.jsx";
+import FormDemo4 from "./components/forms/FormDemo4.jsx";
+import FormDemo5 from "./components/forms/FormDemo5.jsx";
 
 
 function App() {
   const navLinks = [
     {name: "Home", link: "/"},
-    {name: "Shows", link: "/netflixShows"},
-    {name: "Movies", link: "/netflixMovies"},
-    {name: "Seried", link: "/netflixSeries"},
-    {name: "Team", link: "/team"},
-    {name: "Contact", link: "/netflixContact"},
-    {name: "About", link: "/netflixAbout"},
-    {name: "Function Demo 1", link: "/funcd1"},
-    {name: "Usestate demo 1", link: "/used1"},
-    {name: "Usestate demo 2", link: "/used2"},
-    {name: "Usestate demo 3", link: "/used3"},
+    // {name: "Shows", link: "/netflixShows"},
+    // {name: "Movies", link: "/netflixMovies"},
+    // {name: "Seried", link: "/netflixSeries"},
+    // {name: "Team", link: "/team"},
+    // {name: "Contact", link: "/netflixContact"},
+    // {name: "About", link: "/netflixAbout"},
+    // {name: "Function Demo 1", link: "/funcd1"},
+    // {name: "Usestate demo 1", link: "/used1"},
+    // {name: "Usestate demo 2", link: "/used2"},
+    // {name: "Usestate demo 3", link: "/used3"},
     {name: "Tables", link: "/tables"},
     {name: "Input", link: "/input"},
+    {name: "Form 1", link: "/form1"},
+    {name: "Form 2", link: "/form2"},
+    {name: "Form 3", link: "/form3"},
+    {name: "Form 4", link: "/form4"},
+    {name: "Form 5", link: "/form5"},
   ]
 
   return (
@@ -65,21 +75,26 @@ function App() {
       <Navbar navLinks={navLinks} />
       <Routes>
         <Route path="/" element={<NetflixHome />} />
-        <Route path="/*"element={<NotFound />}  />
-        <Route path="/netflixShows"element={<NetflixShows />}  />
-        <Route path="/netflixMovies"element={<NetflixMovies />}  />
-        <Route path="/netflixSeries"element={<NetflixSeries />}  />
-        <Route path="/netflixContact"element={<NetflixContact />}  />
-        <Route path="/netflixAbout"element={<NetflixAbout />}  />
-        <Route path="/watch/:name"element={<Watch />}  />
-        <Route path="/team"element={<Team />}  />
-        <Route path="/teamdetail/:name"element={<TeamDetails />}  />
-        <Route path="/funcd1"element={<FunctionDemo1 />}  />
-        <Route path="/used1"element={<UseStateDemo1 />}  />
-        <Route path="/used2"element={<UseStateDemo2 />}  />
-        <Route path="/used3"element={<UseStateDemo3 />}  />
-        <Route path="/tables"element={<Tables />}  />
-        <Route path="/input"element={<Input />}  />
+        <Route path="/*" element={<NotFound />}  />
+        <Route path="/netflixShows" element={<NetflixShows />}  />
+        <Route path="/netflixMovies" element={<NetflixMovies />}  />
+        <Route path="/netflixSeries" element={<NetflixSeries />}  />
+        <Route path="/netflixContact" element={<NetflixContact />}  />
+        <Route path="/netflixAbout" element={<NetflixAbout />}  />
+        <Route path="/watch/:name" element={<Watch />}  />
+        <Route path="/team" element={<Team />}  />
+        <Route path="/teamdetail/:name" element={<TeamDetails />}  />
+        <Route path="/funcd1" element={<FunctionDemo1 />}  />
+        <Route path="/used1" element={<UseStateDemo1 />}  />
+        <Route path="/used2" element={<UseStateDemo2 />}  />
+        <Route path="/used3" element={<UseStateDemo3 />}  />
+        <Route path="/tables" element={<Tables />}  />
+        <Route path="/input" element={<Input />}  />
+        <Route path="/form1" element={<FormDemo1 />}  />
+        <Route path="/form2" element={<FormDemo2 />}  />
+        <Route path="/form3" element={<FormDemo3 />}  />
+        <Route path="/form4" element={<FormDemo4 />}  />
+        <Route path="/form5" element={<FormDemo5 />}  />
       </Routes>
       <FooterComponent footer="2026" /> 
     </div>
