@@ -34,6 +34,8 @@ import FormDemo2 from "./components/forms/FormDemo2.jsx";
 import FormDemo3 from "./components/forms/FormDemo3.jsx";
 import FormDemo4 from "./components/forms/FormDemo4.jsx";
 import FormDemo5 from "./components/forms/FormDemo5.jsx";
+import FormValid from "./components/forms/FormValid.jsx";
+import FormValid1 from "./components/forms/FormValid1.jsx";
 
 
 function App() {
@@ -56,6 +58,8 @@ function App() {
     {name: "Form 3", link: "/form3"},
     {name: "Form 4", link: "/form4"},
     {name: "Form 5", link: "/form5"},
+    {name: "Form Valid", link: "/formValid"},
+    {name: "Form Valid 1", link: "/formValid1"},
   ]
 
   return (
@@ -95,6 +99,8 @@ function App() {
         <Route path="/form3" element={<FormDemo3 />}  />
         <Route path="/form4" element={<FormDemo4 />}  />
         <Route path="/form5" element={<FormDemo5 />}  />
+        <Route path="/formValid" element={<FormValid />}  />
+        <Route path="/formValid1" element={<FormValid1 />}  />
       </Routes>
       <FooterComponent footer="2026" /> 
     </div>
