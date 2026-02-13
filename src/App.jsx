@@ -36,6 +36,8 @@ import FormDemo4 from "./components/forms/FormDemo4.jsx";
 import FormDemo5 from "./components/forms/FormDemo5.jsx";
 import FormValid from "./components/forms/FormValid.jsx";
 import FormValid1 from "./components/forms/FormValid1.jsx";
+import FormValid2 from "./components/forms/FormValid2.jsx";
+import WatchForm from "./components/forms/WatchForm.jsx";
 
 
 function App() {
@@ -60,6 +62,8 @@ function App() {
     {name: "Form 5", link: "/form5"},
     {name: "Form Valid", link: "/formValid"},
     {name: "Form Valid 1", link: "/formValid1"},
+    {name: "Form Valid 2", link: "/formValid2"},
+    {name: "Watch Form", link: "/watchForm"},
   ]
 
   return (
@@ -101,6 +105,8 @@ function App() {
         <Route path="/form5" element={<FormDemo5 />}  />
         <Route path="/formValid" element={<FormValid />}  />
         <Route path="/formValid1" element={<FormValid1 />}  />
+        <Route path="/formValid2" element={<FormValid2 />}  />
+        <Route path="/watchForm" element={<WatchForm />}  />
       </Routes>
       <FooterComponent footer="2026" /> 
     </div>
