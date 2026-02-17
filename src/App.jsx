@@ -38,6 +38,9 @@ import FormValid from "./components/forms/FormValid.jsx";
 import FormValid1 from "./components/forms/FormValid1.jsx";
 import FormValid2 from "./components/forms/FormValid2.jsx";
 import WatchForm from "./components/forms/WatchForm.jsx";
+import ApiDemo1 from "./components/api/ApiDemo1.jsx";
+import ApiDemo2 from "./components/api/ApiDemo2.jsx";
+import ApiDemo3 from "./components/api/ApiDemo3.jsx";
 
 
 function App() {
@@ -64,6 +67,9 @@ function App() {
     {name: "Form Valid 1", link: "/formValid1"},
     {name: "Form Valid 2", link: "/formValid2"},
     {name: "Watch Form", link: "/watchForm"},
+    {name: "API Demo 1", link: "/apiDemo1"},
+    {name: "API Demo 2", link: "/apiDemo2"},
+    {name: "API Demo 3", link: "/apiDemo3"},
   ]
 
   return (
@@ -107,8 +113,11 @@ function App() {
         <Route path="/formValid1" element={<FormValid1 />}  />
         <Route path="/formValid2" element={<FormValid2 />}  />
         <Route path="/watchForm" element={<WatchForm />}  />
+        <Route path="/apiDemo1" element={<ApiDemo1 />}  />
+        <Route path="/apiDemo2" element={<ApiDemo2 />}  />
+        <Route path="/apiDemo3" element={<ApiDemo3 />}  />
       </Routes>
-      <FooterComponent footer="2026" /> 
+      {/* <FooterComponent footer="2026" />  */}
     </div>
   );
 }
