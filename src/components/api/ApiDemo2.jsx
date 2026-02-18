@@ -10,9 +10,9 @@ function ApiDemo2() {
     setData(response.data.products);
   };
   return (
-    <div>
-      <h1>ApiDemo2</h1>
-      <button onClick={getData}>Get</button>
+    <div style={{textAlign: "center"}}>
+      <h1>API DEMO 2</h1>
+      <button onClick={getData} style={{border: "none", borderRadius: "20px"}}>GET</button>
       {data && (
         <table className="table">
           <thead>

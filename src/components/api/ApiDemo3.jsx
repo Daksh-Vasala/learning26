@@ -10,9 +10,9 @@ function ApiDemo3() {
     setData(response.data.comments);
   };
   return (
-    <div>
-      <h1>ApiDemo3</h1>
-      <button onClick={getData}>Get</button>
+    <div style={{textAlign: "center"}}>
+      <h1>API DEMO 3</h1>
+      <button onClick={getData} style={{border: "none", borderRadius: "20px"}}>GET</button>
       {data && (
         <table className="table">
           <thead>

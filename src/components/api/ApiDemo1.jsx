@@ -13,9 +13,9 @@ function ApiDemo1() {
     setMessage(res.data.message);
   };
   return (
-    <div>
+    <div style={{textAlign: "center"}}>
       <h1>API DEMO 1</h1>
-      <button onClick={getData}>GET</button>
+      <button onClick={getData} style={{border: "none", borderRadius: "20px"}}>GET</button>
       <h2>{message && message}</h2>
       {users && (
         <table className="table">

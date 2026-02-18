@@ -41,6 +41,9 @@ import WatchForm from "./components/forms/WatchForm.jsx";
 import ApiDemo1 from "./components/api/ApiDemo1.jsx";
 import ApiDemo2 from "./components/api/ApiDemo2.jsx";
 import ApiDemo3 from "./components/api/ApiDemo3.jsx";
+import ApiDemo4 from "./components/api/ApiDemo4.jsx";
+import MovieDetail from "./components/api/MovieDetail.jsx";
+import ApiDemo5 from "./components/api/ApiDemo5.jsx";
 
 
 function App() {
@@ -56,20 +59,22 @@ function App() {
     // {name: "Usestate demo 1", link: "/used1"},
     // {name: "Usestate demo 2", link: "/used2"},
     // {name: "Usestate demo 3", link: "/used3"},
-    {name: "Tables", link: "/tables"},
-    {name: "Input", link: "/input"},
-    {name: "Form 1", link: "/form1"},
-    {name: "Form 2", link: "/form2"},
-    {name: "Form 3", link: "/form3"},
-    {name: "Form 4", link: "/form4"},
-    {name: "Form 5", link: "/form5"},
-    {name: "Form Valid", link: "/formValid"},
-    {name: "Form Valid 1", link: "/formValid1"},
-    {name: "Form Valid 2", link: "/formValid2"},
-    {name: "Watch Form", link: "/watchForm"},
+    // {name: "Tables", link: "/tables"},
+    // {name: "Input", link: "/input"},
+    // {name: "Form 1", link: "/form1"},
+    // {name: "Form 2", link: "/form2"},
+    // {name: "Form 3", link: "/form3"},
+    // {name: "Form 4", link: "/form4"},
+    // {name: "Form 5", link: "/form5"},
+    // {name: "Form Valid", link: "/formValid"},
+    // {name: "Form Valid 1", link: "/formValid1"},
+    // {name: "Form Valid 2", link: "/formValid2"},
+    // {name: "Watch Form", link: "/watchForm"},
     {name: "API Demo 1", link: "/apiDemo1"},
     {name: "API Demo 2", link: "/apiDemo2"},
     {name: "API Demo 3", link: "/apiDemo3"},
+    {name: "API Demo 4", link: "/apiDemo4"},
+    {name: "API Demo 5", link: "/apiDemo5"},
   ]
 
   return (
@@ -116,6 +121,9 @@ function App() {
         <Route path="/apiDemo1" element={<ApiDemo1 />}  />
         <Route path="/apiDemo2" element={<ApiDemo2 />}  />
         <Route path="/apiDemo3" element={<ApiDemo3 />}  />
+        <Route path="/apiDemo4" element={<ApiDemo4 />}  />
+        <Route path="/apiMovie/:id" element={<MovieDetail />}  />
+        <Route path="/apiDemo5" element={<ApiDemo5 />}  />
       </Routes>
       {/* <FooterComponent footer="2026" />  */}
     </div>
